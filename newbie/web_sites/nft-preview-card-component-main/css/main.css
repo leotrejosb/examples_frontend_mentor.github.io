@@ -1,0 +1,96 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.equilibrium{
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+li:first-child{
+    color: hsl(178, 100%, 50%);
+}
+
+li:last-child{
+    color: hsl(215, 51%, 70%);
+}
+
+p:last-child{
+    color: hsl(215, 51%, 70%);
+}
+
+span{
+    color: hsl(0, 0%, 100%);
+}
+

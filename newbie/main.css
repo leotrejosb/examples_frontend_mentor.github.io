@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: white;
+  background: #070c20;
+  
+}
+
+.rest ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+.rest ul li{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 40px;
+  text-decoration: none;
+  color: #4cc2c9;
+
+  padding-bottom: 2rem;
+}
+
+.rest p:first-child{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.good_luck{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.title_text{
+  padding-left: 1rem;
+}
+
+
+.rest img{
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  transform: scale(0.9);
+  transition: transform 0.4s;
+}
+
+.rest img:hover {
+  transform: scale(1);
+}
+
+.level {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+
+.level li {
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.level li p{
+  font-weight: 900;
+}
+
+.level li a {
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  background: #070c20;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+
+.personal_info img{
+  width: 20px;
+  height: 20px;
+}
+.footer{
+  min-width: 700px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer ul li a{
+  color: white;
+}
+.footer ul li{
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  transition: .2s;
+  text-align: center;
+}
+
+.footer ul li a{
+  display: block;
+  padding: 0 10px;
+  background: #070c20;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+  transition: 0.5s;
+}
+
+.footer ul:hover a{
+  filter: blur(2px);
+}
+
+.rest ul li{
+  text-decoration: none;
+}
+
+.footer ul li a:hover{
+  transform: translateY(-3px)scale(1.05s);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+  filter: none;
+}
+
+.footer ul li .facebook:hover{
+  background: #3b5999;
+}
+
+.footer ul li .linkedin:hover{
+  background: #0077b5;
+}
+
+.footer ul li .instagram:hover{
+  background: #e4405f;
+}
+
+
+
+
+@media (max-width: 768px) {
+.rest img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .level li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .level {
+    flex-direction: column;
+  }
+}
