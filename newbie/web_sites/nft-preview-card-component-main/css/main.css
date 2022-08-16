@@ -44,32 +44,73 @@ The designs were created to the following widths:
 body{
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 15px;
     justify-content: center;
 }
 
-.equilibrium{
-    max-width: 100%;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-ul{
-    list-style-type: none;
-}
-
 .card{
     background-color: hsl(216, 50%, 16%);
     padding: 1.5rem;
     border-radius: 1.5rem;
+    width: 275px;
+
 }
 
-h1{
+.img{
+    position: relative;
+}
+
+.ethereum{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.ethereum img{
+    margin-right: 5px;
+}
+
+.clock{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.clock img{
+    margin-right: 5px;
+}
+
+.main_img{
+    border-radius: 0.5rem;
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.price_days{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+h2{
     color:hsl(0, 0%, 100%);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .description{
@@ -78,13 +119,6 @@ h1{
     font-size: 18px;
 }
 
-li:first-child{
-    color: hsl(178, 100%, 50%);
-}
-
-li:last-child{
-    color: hsl(215, 51%, 70%);
-}
 
 p:last-child{
     color: hsl(215, 51%, 70%);
@@ -94,3 +128,48 @@ span{
     color: hsl(0, 0%, 100%);
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+}
+
+h2, span, .main_img{
+    cursor: pointer;
+}
+
+h2:hover , span:hover{
+    color: hsl(178, 100%, 50%);
+    transition: color 0.5s;
+}
+
+.img div{
+    position: absolute;
+    /*background-color: hsl(178, 100%, 50%);*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.img div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img div:hover{
+    border-radius: 0.5rem;
+    opacity: 60%;
+    background-color: hsl(178, 100%, 50%);
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+}
