@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1020px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1rem 1rem 1rem 1rem;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.img-component img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-component{
+    position: relative;
+}
+
+.img-component::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .5;
+}
+.text{
+    padding: 13%;
+}
+h1{
+    font-weight: 700;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.description{
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.examples{
+    display: flex;
+    justify-content: space-between;
+    text-transform:uppercase;
+    
+}
+
+.examples p{
+    padding-top: 0.5rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        text-align: center;
+    }
+    .container{
+        grid-template-columns:1fr;
+    }
+    .img-component{
+        order: -1;
+    }
+    .examples{
+        flex-direction: column;
+        
+    }
+    .description{
+        margin-bottom: 1.2rem;
+    }
+    h2{
+        margin-top: 1rem;
+    }
+}
